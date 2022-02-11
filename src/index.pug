@@ -1,10 +1,15 @@
 html
 	include html/head.pug
 	body
-		include html/header
-		main.page
+		include html/header.pug
+		.wrapper
+			include html/main/mainBunner.pug
+			include html/main/smollBanner.pug
+			include html/main/card-defolt.pug
+			include html/main/mediumBanner.pug
+			include html/main/specialOffers.pug
 			
 		include html/footer.pug
 		script(src='js/app.min.js')
-		script(src="js/vendors.min.js")
+		//- script(src="js/vendors.min.js")
 		

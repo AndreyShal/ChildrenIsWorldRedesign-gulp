@@ -1,28 +1,28 @@
 @font-face {
-	font-family: CormorantUpright;
+	font-family: CirceBold;
 	font-display: swap;
-	src: url("../fonts/CormorantUpright-Bold.woff2") format("woff2"), url("../fonts/CormorantUpright-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: CormorantUpright;
-	font-display: swap;
-	src: url("../fonts/CormorantUpright-Regular.woff2") format("woff2"), url("../fonts/CormorantUpright-Regular.woff") format("woff");
+	src: url("../fonts/CirceBold.woff2") format("woff2"), url("../fonts/CirceBold.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
-	font-family: CormorantUpright;
+	font-family: CirceRoundedRegular3;
 	font-display: swap;
-	src: url("../fonts/CormorantUpright-SemiBold.woff2") format("woff2"), url("../fonts/CormorantUpright-SemiBold.woff") format("woff");
-	font-weight: 600;
+	src: url("../fonts/CirceRoundedRegular3.woff2") format("woff2"), url("../fonts/CirceRoundedRegular3.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
-	font-family: TTTrailers;
+	font-family: CirceRegular;
 	font-display: swap;
-	src: url("../fonts/TTTrailers-Regular.woff2") format("woff2"), url("../fonts/TTTrailers-Regular.woff") format("woff");
+	src: url("../fonts/CirceRegular.woff2") format("woff2"), url("../fonts/CirceRegular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: CirceRoundedRegular5;
+	font-display: swap;
+	src: url("../fonts/CirceRoundedRegular5.woff2") format("woff2"), url("../fonts/CirceRoundedRegular5.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }

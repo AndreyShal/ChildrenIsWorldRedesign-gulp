@@ -1,0 +1,208 @@
+.smoll-banner-title {
+    margin-bottom: 30px;
+}
+.medium-banner {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    height: 158px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.mediumBanner1 {
+    background: #09bdbd;
+}
+.mediumBanner2 {
+    background: #6c859f;
+}
+.medium-banner-img {
+    position: absolute;
+    // left: 53.12%;
+    right: -0.56%;
+    top: 0%;
+    bottom: 0%;
+    width: 140.31px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    // z-index: 1;
+}
+.medium-banner-img1 {
+    background-image: url("../../img/banner/mediumBanner/mediumBanner-1.jpg");
+}
+.medium-banner-img2 {
+    background-image: url("../../img/banner/mediumBanner/mediumBanner-2.jpg");
+}
+.medium-banner-line {
+    position: absolute;
+    width: 128px;
+    height: 100%;
+    left: 104px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // z-index: 1;
+}
+.medium-banner-line1 {
+    background-image: url("../../img/banner/mediumBanner/line-1.svg");
+}
+.medium-banner-line2 {
+    background-image: url("../../img/banner/mediumBanner/line-2.svg");
+}
+.medium-banner-text {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 139px;
+}
+.medium-banner-text span {
+    font-size: 14px;
+    line-height: 18px;
+}
+.medium-banner-text2 span {
+    color: #ffffff;
+}
+.medium-banner-text h6 {
+    color: #1d1d1d;
+    text-align: left;
+    display: none;
+}
+.medium-banner-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 15px;
+    position: absolute;
+    width: 85px;
+    height: 28px;
+    left: 20px;
+    top: 101px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.medium-banner-button h6 {
+    color: #1d1d1d;
+}
+@media screen and (min-width: 480.95px) {
+    .medium-banner {
+        width: 460px;
+        height: 240px;
+    }
+    .medium-banner-text {
+        top: 50px;
+        left: 30px;
+        width: 195px;
+    }
+    .medium-banner-text h6 {
+        display: block;
+    }
+    .medium-banner-text span {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .medium-banner-img {
+        width: 217.81px;
+    }
+    .medium-banner-line {
+        width: 195px;
+        left: 165px;
+    }
+    .medium-banner-button {
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        position: absolute;
+        width: 115px;
+        height: 41px;
+        top: 149px;
+    }
+}
+@media screen and (min-width: 768.95px) {
+    .medium-banner {
+        width: 640px;
+        height: 260px;
+    }
+    .medium-banner-text {
+        top: 60px;
+        left: 30px;
+        width: 317px;
+    }
+    .medium-banner-text span {
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .medium-banner-img {
+        width: 279.81px;
+    }
+    .medium-banner-line {
+        width: 207px;
+        left: 268px;
+    }
+    .medium-banner-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        width: 115px;
+        height: 41px;
+        left: 30px;
+        top: 151px;
+    }
+}
+@media screen and (min-width: 1000.95px) {
+    .mediumBanner__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .medium-banner {
+        margin: 0;
+        width: 470px;
+        height: 340px;
+    }
+    .medium-banner-text {
+        width: 236px;
+        left: 20px;
+        top: 68px;
+    }
+    .medium-banner-text-bottom {
+        margin-top: 30px;
+    }
+    .medium-banner-img {
+        width: 219.81px;
+    }
+    .medium-banner-line {
+        width: 374px;
+        left: 83px;
+    }
+    .medium-banner-button {
+        left: 20px;
+        top: 231px;
+    }
+}
+@media screen and (min-width: 1440.95px) {
+    .medium-banner {
+        width: 585px;
+        height: 430px;
+    }
+    .medium-banner-text {
+        width: 274px;
+        left: 30px;
+        top: 113px;
+    }
+    .medium-banner-img {
+        width: 288.81px;
+    }
+    .medium-banner-line {
+        width: 374px;
+        left: 133px;
+    }
+    .medium-banner-button {
+        left: 30px;
+        top: 276px;
+    }
+}

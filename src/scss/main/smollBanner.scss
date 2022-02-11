@@ -1,0 +1,417 @@
+.smoll-banner-title {
+    width: 300px;
+    margin: 0 auto;
+}
+.smoll-banner {
+    position: relative;
+    width: 300px;
+    height: 158px;
+    margin: 0 auto;
+    // z-index: 1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.smoll-banner1 {
+    background: #06c92e;
+}
+.smoll-banner2 {
+    background: #f9e254;
+}
+.smoll-banner3 {
+    background: #fcbc25;
+}
+.smoll-banner4 {
+    background: #00c2fc;
+}
+.smoll-banner-img {
+    position: absolute;
+    // left: 53.12%;
+    right: -0.56%;
+    top: 0%;
+    bottom: 0%;
+    width: 140.31px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    // z-index: 1;
+}
+.smoll-banner-img1 {
+    background-image: url("../../img/banner/smollBanner/smollBanner-img-1.jpg");
+}
+.smoll-banner-img2 {
+    background-image: url("../../img/banner/smollBanner/smollBanner-img-2.jpg");
+}
+.smoll-banner-img3 {
+    background-image: url("../../img/banner/smollBanner/smollBanner-img-3.jpg");
+}
+.smoll-banner-img4 {
+    background-image: url("../../img/banner/smollBanner/smollBanner-img-4.jpg");
+}
+.smoll-banner-line {
+    position: absolute;
+    width: 128px;
+    height: 100%;
+    left: 104px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // z-index: 1;
+}
+.smoll-banner-line1 {
+    background-image: url("../../img/banner/smollBanner/line-1.svg");
+}
+.smoll-banner-line2 {
+    background-image: url("../../img/banner/smollBanner/line-2.svg");
+}
+.smoll-banner-line3 {
+    background-image: url("../../img/banner/smollBanner/line-3.svg");
+}
+.smoll-banner-line4 {
+    background-image: url("../../img/banner/smollBanner/line-4.svg");
+}
+.smoll-banner-text h6 {
+    font-family: CirceRoundedRegular3;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1d1d1d;
+    text-align: left;
+    font-weight: 400;
+}
+.smoll-banner-discount {
+    position: relative;
+    left: 57.33%;
+    top: 59%;
+    width: 76.44px;
+    height: 75.34px;
+    background-image: url("../../img/banner/mainBanner/discount.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    // z-index: 4;
+}
+.smoll-banner-discount span,
+.smoll-banner-discount h3 {
+    color: FFF;
+}
+.smoll-banner-discount-text {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 30px;
+    left: 4px;
+    width: 69px;
+    height: 30px;
+    transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+    z-index: 3;
+}
+.smoll-banner-discount h3,
+.smoll-banner-discount span {
+    display: inline-block;
+    text-align: center;
+    z-index: 3;
+}
+.smoll-banner-discount h3 {
+    width: 30px;
+}
+.smoll-banner-discount span {
+    width: 20px;
+}
+.smoll-banner-text {
+    position: absolute;
+    width: 139px;
+    top: 28px;
+    left: 20px;
+}
+.smoll-banner-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 15px;
+    position: absolute;
+    width: 85px;
+    height: 28px;
+    left: 20px;
+    top: 101px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.smoll-banner-button h6 {
+    color: #1d1d1d;
+}
+.smoll-banner-button-show-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 187px;
+    height: 40px;
+    background: #dfecf8;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.smoll-banner-button-show-all h6 {
+    color: #0073e6;
+}
+@media screen and (min-width: 480.95px) {
+    .smoll-banner-title {
+        width: 460px;
+    }
+    .smoll-banner {
+        width: 460px;
+        height: 240px;
+    }
+    .smoll-banner-text {
+        position: absolute;
+        width: 160px;
+        top: 50px;
+    }
+    .smoll-banner-text span {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .smoll-banner-button {
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        position: absolute;
+        width: 115px;
+        height: 41px;
+        top: 149px;
+    }
+    .smoll-banner-line {
+        width: 195px;
+        left: 165px;
+        top: 0px;
+    }
+    .smoll-banner-img {
+        width: 217.81px;
+    }
+    .smoll-banner-discount {
+        width: 76px;
+        height: 75px;
+        top: 0;
+        left: 227px;
+        height: 53.34px;
+        transform: rotate(0deg);
+        background-image: url("../../img/banner/mainBanner/discount-480.png");
+    }
+    .smoll-banner-discount-text {
+        width: 58px;
+        transform: rotate(331deg);
+        top: 10px;
+        right: 0;
+        left: 5px;
+    }
+    .smoll-banner-discount h3 {
+        width: 25px;
+    }
+    .smoll-banner-discount span {
+        width: 15px;
+    }
+    .smoll-banner-button-show-all {
+        width: 460px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width: 768.95px) {
+    .smoll-banner-title {
+        width: 640px;
+    }
+    .smoll-banner {
+        width: 640px;
+        height: 260px;
+        margin-bottom: 30px;
+    }
+    .smoll-banner-text {
+        position: absolute;
+        width: 266px;
+        top: 50px;
+        left: 30px;
+    }
+    .smoll-banner-text h6 {
+        font-size: 14px;
+        line-height: 21px;
+        color: #1d1d1d;
+        text-align: left;
+        font-weight: 400;
+    }
+    .smoll-banner-text span {
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .smoll-banner-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        width: 115px;
+        height: 41px;
+        left: 30px;
+        top: 151px;
+    }
+    .smoll-banner-line {
+        width: 207px;
+        height: 100%;
+        left: 268px;
+    }
+    .smoll-banner-img {
+        width: 279.81px;
+    }
+    .smoll-banner-discount {
+        top: 160px;
+        left: 390px;
+        width: 113px;
+        height: 108px;
+        transform: rotate(180deg);
+        background-image: url("../../img/banner/mainBanner/discount-768.png");
+    }
+    .smoll-banner-discount-text {
+        width: 110px;
+        transform: rotate(161deg);
+        top: 26px;
+        right: 0;
+        left: 4px;
+    }
+    .smoll-banner-discount h3 {
+        width: 50px;
+        font-size: 48px;
+        line-height: 61px;
+    }
+    .smoll-banner-discount-text-50-change h3 {
+        width: 110px;
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .smoll-banner-discount span {
+        width: 30px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .smoll-banner-button-show-all {
+        width: 640px;
+        height: 56px;
+        margin-bottom: 50px;
+    }
+    .smoll-banner-button-show-all h6 {
+        color: #6c859f;
+    }
+}
+@media screen and (min-width: 1000.95px) {
+    .smoll-banner-title {
+        width: 960px;
+    }
+    .smoll-banner__container {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .smoll-banner {
+        width: 470px;
+        height: 260px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .smoll-banner-text {
+        position: absolute;
+        width: 266px;
+        top: 50px;
+        left: 30px;
+    }
+    .smoll-banner-text span {
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .smoll-banner-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        width: 115px;
+        height: 41px;
+        left: 30px;
+        top: 151px;
+    }
+    .smoll-banner-line {
+        width: 207px;
+        height: 100%;
+        left: 171px;
+    }
+    .smoll-banner-img {
+        width: 208.81px;
+    }
+    .smoll-banner-discount {
+        top: 160px;
+        left: 291px;
+        width: 113px;
+        height: 108px;
+        transform: rotate(180deg);
+        background-image: url("../../img/banner/mainBanner/discount-768.png");
+    }
+    .smoll-banner-discount-text {
+        width: 110px;
+        transform: rotate(161deg);
+        top: 26px;
+        right: 0;
+        left: 4px;
+    }
+    .smoll-banner-button-show-all {
+        width: 960px;
+    }
+}
+@media screen and (min-width: 1440.95px) {
+    .smoll-banner-title {
+        width: 1200px;
+    }
+    .smoll-banner__container {
+        width: 1200px;
+    }
+    .smoll-banner {
+        width: 585px;
+        height: 260px;
+    }
+    .smoll-banner-text {
+        width: 308px;
+    }
+    .smoll-banner-line {
+        left: 246px;
+    }
+    .smoll-banner-img {
+        width: 246.81px;
+    }
+    .smoll-banner-discount {
+        top: 157px;
+        left: 361px;
+        width: 118px;
+        height: 114px;
+        transform: rotate(180deg);
+        background-image: url("../../img/banner/mainBanner/discount-480.png");
+    }
+    .smoll-banner-discount-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 110px;
+        transform: rotate(161deg);
+        top: 28px;
+        right: 0;
+        left: 4px;
+    }
+    .smoll-banner-discount-text-1 span {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .smoll-banner-button-show-all {
+        width: 1200px;
+    }
+}
