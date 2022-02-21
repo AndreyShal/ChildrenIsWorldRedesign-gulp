@@ -14,7 +14,8 @@
 	"author": "FLS",
 	"license": "ISC",
 	"dependencies": {
-		"gulp-cli": "^2.3.0"
+		"gulp-cli": "^2.3.0",
+		"swiper": "^8.0.3"
 	},
 	"devDependencies": {
 		"browser-sync": "latest",
@@ -43,7 +44,6 @@
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",
 		"sass": "latest",
-		"swiper": "^8.0.3",
 		"vinyl-ftp": "latest",
 		"webp-converter": "2.2.3",
 		"webpack": "latest",

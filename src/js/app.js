@@ -1,15 +1,12 @@
 import * as flsFunctions from "./modules/functions.js";
 import * as flsFunctionsMenuHidden from "./modules/menuHidden.js";
+import Swiper, { Navigation, Pagination } from 'swiper';
 
 flsFunctions.isWebp();
 flsFunctionsMenuHidden.scrollMenu();
 
-
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-Swiper.use([Navigation, Pagination]);
-
 const swiper1 = new Swiper('.swiper-main-menu', {
+    modules: [Navigation, Pagination],
     navigation: {
         nextEl: '.swiper-button-next-unique',
         prevEl: '.swiper-button-prev-unique',
