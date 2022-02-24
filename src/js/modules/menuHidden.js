@@ -43,5 +43,8 @@ export function scrollMenu() {
         showFooter = subMenu;
     }
 
+    document.querySelector(".catalog-button-wrapper").addEventListener("click", function () {
+        document.querySelector(".catalogMenu").classList.toggle('catalogMenu__hidden');
+    })
 }
 

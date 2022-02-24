@@ -840,6 +840,12 @@ h6 {
     font-size: 12px;
   }
 }
+.catalogMenu__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .catalogMenu {
   position: absolute;
   margin: 0 auto;
@@ -852,7 +858,7 @@ h6 {
   z-index: 20;
 }
 
-.menu-li-catalogMenu__hidden {
+.catalogMenu__hidden {
   display: none;
 }
 
