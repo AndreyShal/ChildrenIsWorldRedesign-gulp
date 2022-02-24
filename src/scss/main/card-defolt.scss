@@ -2,6 +2,11 @@
     width: 300px;
     margin: 0 auto;
 }
+.swiper-curd-defolt {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 40px;
+}
 .card-defolt {
     position: relative;
     width: 220px;
@@ -16,7 +21,7 @@
     height: 17.83px;
     top: 19px;
     right: 18px;
-    background-image: url("../../img/card-defolt/heart.svg");
+    background-image: url("../img/card-defolt/heart.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -48,10 +53,10 @@
     align-items: center;
 }
 .card-defolt-circle-top1 {
-    background-image: url("../../img/card-defolt/circle.svg");
+    background-image: url("../img/card-defolt/circle.svg");
 }
 .card-defolt-circle-top2 {
-    background-image: url("../../img/card-defolt/circle-2.svg");
+    background-image: url("../img/card-defolt/circle-2.svg");
     font-family: CirceRoundedRegular3;
     font-size: 10px;
     line-height: 13px;
@@ -83,13 +88,16 @@
     margin-bottom: 5.42px;
 }
 .card-defolt-img-1 {
-    background-image: url("../../img/card-defolt/card-defolt-1.jpg");
+    background-image: url("../img/card-defolt/card-defolt-1.jpg");
 }
 .card-defolt-img-2 {
-    background-image: url("../../img/card-defolt/card-defolt-2.jpg");
+    background-image: url("../img/card-defolt/card-defolt-2.jpg");
 }
 .card-defolt-img-3 {
-    background-image: url("../../img/card-defolt/card-defolt-3.jpg");
+    background-image: url("../img/card-defolt/card-defolt-3.jpg");
+}
+.card-defolt-img-4 {
+    background-image: url("../img/card-defolt/card-defolt-4.jpg");
 }
 .card-defolt-name {
     width: 193px;
@@ -120,10 +128,10 @@
     background-size: contain;
 }
 .stars-fool {
-    background-image: url("../../img/card-defolt/stars.svg");
+    background-image: url("../img/card-defolt/stars.svg");
 }
 .stars-zero {
-    background-image: url("../../img/card-defolt/stars-zero.svg");
+    background-image: url("../img/card-defolt/stars-zero.svg");
 }
 .card-defolt-reviews {
     display: flex;
@@ -164,10 +172,81 @@
     .card-defolt-container {
         width: 460px;
     }
+    .swiper-curd-defolt {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 44px;
+    }
+    .prev-card-defolt-arrow {
+        width: 10px;
+        height: 20px;
+        background-image: url("../img/swiper/arrow-prev.svg");
+        position: absolute;
+        top: 370px;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .next-card-defolt-arrow {
+        width: 10px;
+        height: 20px;
+        background-image: url("../img/swiper/arrow-prev.svg");
+        position: absolute;
+        top: 370px;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        cursor: pointer;
+        transform: rotate(180deg);
+        z-index: 10;
+    }
 }
 @media screen and (min-width: 768.95px) {
     .card-defolt-container {
         width: 640px;
+    }
+    .swiper-curd-defolt {
+        width: 100%;
+        height: 550px;
+        margin-bottom: 50px;
+    }
+    .prev-card-defolt-arrow {
+        top: 6px;
+        left: 15px;
+        width: 15px;
+        height: 35px;
+    }
+    .next-card-defolt-arrow {
+        top: 6px;
+        right: 15px;
+        width: 15px;
+        height: 35px;
+    }
+    .swiper-card-defolt-circle-prev {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 490px;
+        left: 0;
+        border-radius: 50%;
+        background: #dfecf8;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .swiper-card-defolt-circle-next {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 490px;
+        right: 0;
+        border-radius: 50%;
+        background: #dfecf8;
+        cursor: pointer;
+        z-index: 11;
     }
     .card-defolt {
         width: 307px;
@@ -213,9 +292,26 @@
     .card-defolt-container {
         width: 1200px;
     }
+    .swiper-curd-defolt {
+        height: 550px;
+    }
+    .card-defolt {
+        width: 278px;
+        height: 459px;
+    }
     .card-defolt-img {
         width: 233px;
         height: 233px;
         margin-bottom: 10px;
+    }
+    .swiper-pagination-card-defolt {
+        position: absolute;
+        top: 520px;
+        display: flex;
+        justify-content: center;
+        transform: scale(1.8);
+    }
+    .swiper-pagination-card-defolt span {
+        background-color: #0073e6;
     }
 }

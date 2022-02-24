@@ -1,6 +1,48 @@
 .smoll-banner-title {
     margin-bottom: 30px;
 }
+.swiper-mediumBanner {
+    margin: 0 auto;
+    width: 300px;
+    height: 420px;
+}
+.swiper-pagination-mediumBanner {
+    position: absolute;
+    top: 380px;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.8);
+}
+.swiper-pagination-mediumBanner span {
+    background: #0073e6;
+}
+.prev-mediumBanner-arrow {
+    width: 10px;
+    height: 20px;
+    background-image: url("../img/swiper/arrow-prev.svg");
+    position: absolute;
+    top: 365px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 10;
+}
+.next-mediumBanner-arrow {
+    width: 10px;
+    height: 20px;
+    background-image: url("../img/swiper/arrow-prev.svg");
+    position: absolute;
+    top: 365px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+    transform: rotate(180deg);
+    z-index: 10;
+}
 .medium-banner {
     position: relative;
     margin: 0 auto;
@@ -30,10 +72,10 @@
     // z-index: 1;
 }
 .medium-banner-img1 {
-    background-image: url("../../img/banner/mediumBanner/mediumBanner-1.jpg");
+    background-image: url("../img/banner/mediumBanner/mediumBanner-1.jpg");
 }
 .medium-banner-img2 {
-    background-image: url("../../img/banner/mediumBanner/mediumBanner-2.jpg");
+    background-image: url("../img/banner/mediumBanner/mediumBanner-2.jpg");
 }
 .medium-banner-line {
     position: absolute;
@@ -47,10 +89,10 @@
     // z-index: 1;
 }
 .medium-banner-line1 {
-    background-image: url("../../img/banner/mediumBanner/line-1.svg");
+    background-image: url("../img/banner/mediumBanner/line-1.svg");
 }
 .medium-banner-line2 {
-    background-image: url("../../img/banner/mediumBanner/line-2.svg");
+    background-image: url("../img/banner/mediumBanner/line-2.svg");
 }
 .medium-banner-text {
     position: absolute;
@@ -88,6 +130,20 @@
     color: #1d1d1d;
 }
 @media screen and (min-width: 480.95px) {
+    .swiper-mediumBanner {
+        margin: 0 auto;
+        width: 460px;
+        height: 590px;
+    }
+    .swiper-pagination-mediumBanner {
+        top: 547px;
+    }
+    .prev-mediumBanner-arrow {
+        top: 530px;
+    }
+    .next-mediumBanner-arrow {
+        top: 530px;
+    }
     .medium-banner {
         width: 460px;
         height: 240px;
@@ -122,6 +178,48 @@
     }
 }
 @media screen and (min-width: 768.95px) {
+    .swiper-mediumBanner {
+        margin: 0 auto;
+        width: 640px;
+        height: 686px;
+    }
+    .swiper-pagination-mediumBanner {
+        top: 605px;
+    }
+    .swiper-mediumBanner-circle-prev {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 556px;
+        left: 0;
+        border-radius: 50%;
+        background: #dfecf8;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .swiper-mediumBanner-circle-next {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 556px;
+        right: 0;
+        border-radius: 50%;
+        background: #dfecf8;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .prev-mediumBanner-arrow {
+        top: 6px;
+        left: 15px;
+        width: 15px;
+        height: 35px;
+    }
+    .next-mediumBanner-arrow {
+        top: 6px;
+        right: 15px;
+        width: 15px;
+        height: 35px;
+    }
     .medium-banner {
         width: 640px;
         height: 260px;
@@ -155,6 +253,19 @@
     }
 }
 @media screen and (min-width: 1000.95px) {
+    .swiper-mediumBanner {
+        width: 960px;
+        height: 476px;
+    }
+    .swiper-pagination-mediumBanner {
+        top: 410px;
+    }
+    .swiper-mediumBanner-circle-prev {
+        top: 365px;
+    }
+    .swiper-mediumBanner-circle-next {
+        top: 365px;
+    }
     .mediumBanner__container {
         display: flex;
         justify-content: space-between;
@@ -185,6 +296,19 @@
     }
 }
 @media screen and (min-width: 1440.95px) {
+    .swiper-mediumBanner {
+        width: 1200px;
+        height: 566px;
+    }
+    .swiper-pagination-mediumBanner {
+        top: 502px;
+    }
+    .swiper-mediumBanner-circle-prev {
+        top: 456px;
+    }
+    .swiper-mediumBanner-circle-next {
+        top: 456px;
+    }
     .medium-banner {
         width: 585px;
         height: 430px;

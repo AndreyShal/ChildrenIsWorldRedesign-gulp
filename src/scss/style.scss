@@ -1,13 +1,50 @@
 @charset "UTF-8";
 @import "zeroing.scss";
 @import "header.scss";
+@import "catalogMenu.scss";
 @import "main/mainBunner.scss";
 @import "main/smollBanner.scss";
 @import "main/card-defolt.scss";
 @import "main/mediumBanner.scss";
 @import "main/specialOffers.scss";
+@import "main/news.scss";
+@import "main/reviews.scss";
+@import "main/brand.scss";
 @import "fonts";
+@import "vendor.scss";
+@import "main/footer.scss";
 
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 10px;
+}
+@media screen and (min-width: 480.95px) {
+	.wrapper {
+		width: 460px;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+@media screen and (min-width: 768.95px) {
+	.wrapper {
+		width: 640px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 1000.95px) {
+	.wrapper {
+		width: 960px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 1440.95px) {
+	.wrapper {
+		width: 1200px;
+		margin: 0 auto;
+	}
+}
 h2 {
 	font-family: CirceBold;
 	font-style: normal;
@@ -16,7 +53,25 @@ h2 {
 	line-height: 35px;
 	color: #1d1d1d;
 }
+@media screen and (min-width: 480.95px) {
+	h2 {
+		font-size: 24px;
+		line-height: 35px;
+	}
+}
 @media screen and (min-width: 768.95px) {
+	h2 {
+		font-size: 36px;
+		line-height: 53px;
+	}
+}
+@media screen and (min-width: 1000.95px) {
+	h2 {
+		font-size: 36px;
+		line-height: 53px;
+	}
+}
+@media screen and (min-width: 1440.95px) {
 	h2 {
 		font-size: 36px;
 		line-height: 53px;
@@ -49,7 +104,6 @@ h5 {
 }
 h6 {
 	font-family: CirceBold;
-	// font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 21px;
@@ -63,10 +117,4 @@ span {
 	color: #1d1d1d;
 	text-align: left;
 	font-weight: 400;
-}
-@media screen and (min-width: 480.95px) {
-	h2 {
-		font-size: 24px;
-		line-height: 35px;
-	}
 }

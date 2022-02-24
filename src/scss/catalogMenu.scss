@@ -1,0 +1,14 @@
+.catalogMenu {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 9px;
+    padding-left: 28px;
+    top: 168px;
+    background: #f2f6fa;
+    min-height: 300px;
+    z-index: 20;
+}
+.menu-li-catalogMenu__hidden {
+    display: none;
+}

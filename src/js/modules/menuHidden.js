@@ -24,4 +24,24 @@ export function scrollMenu() {
         }
         onScrollHeader() // вызываем основную функцию onScrollHeader
     });
+
+    var show;
+    window.openMenuCatalog = function (node) {
+        var subMenu = node.parentNode.getElementsByTagName("ul")[0];
+        subMenu.classList.toggle('menu-li-catalogMenu__hidden');
+        if (show) show.classList.add('menu-li-catalogMenu__hidden')
+        else subMenu.classList.remove('menu-li-catalogMenu__hidden');
+        show = subMenu;
+    }
+
+    var showFooter;
+    window.openMenuFooter = function (node) {
+        var subMenu = node.parentNode.getElementsByTagName("ul")[0];
+        subMenu.classList.toggle('menu-li-footer__hidden');
+        if (showFooter) showFooter.classList.add('menu-li-footer__hidden')
+        else subMenu.classList.remove('menu-li-footer__hidden');
+        showFooter = subMenu;
+    }
+
 }
+
