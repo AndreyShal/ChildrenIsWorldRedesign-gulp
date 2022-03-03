@@ -1,4 +1,6 @@
 .special-offers__container {
+    margin: 0 auto;
+    width: 300px;
     margin-bottom: 40px;
 }
 .special-offers {
@@ -73,6 +75,9 @@
     cursor: pointer;
 }
 @media screen and (min-width: 480.95px) {
+    .special-offers__container {
+        width: 459px;
+    }
     .special-offers {
         width: 459px;
     }
@@ -88,6 +93,7 @@
 }
 @media screen and (min-width: 768.95px) {
     .special-offers__container {
+        width: 640px;
         margin-bottom: 50px;
     }
     .special-offers {
@@ -96,6 +102,7 @@
 }
 @media screen and (min-width: 1000.95px) {
     .special-offers__container {
+        width: 960px;
         display: flex;
         justify-content: space-between;
     }
@@ -120,6 +127,9 @@
     }
 }
 @media screen and (min-width: 1440.95px) {
+    .special-offers__container {
+        width: 1200px;
+    }
     .special-offers {
         width: 380px;
         height: 390px;

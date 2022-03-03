@@ -173,7 +173,7 @@
         width: 460px;
     }
     .swiper-curd-defolt {
-        width: 100%;
+        width: 460px;
         height: 400px;
         margin-bottom: 44px;
     }
@@ -208,9 +208,10 @@
 @media screen and (min-width: 768.95px) {
     .card-defolt-container {
         width: 640px;
+        margin: 0 auto;
     }
     .swiper-curd-defolt {
-        width: 100%;
+        width: 640px;
         height: 550px;
         margin-bottom: 50px;
     }
@@ -284,6 +285,9 @@
     }
 }
 @media screen and (min-width: 1000.95px) {
+    .swiper-curd-defolt {
+        width: 960px;
+    }
     .card-defolt-container {
         width: 960px;
     }
@@ -293,6 +297,7 @@
         width: 1200px;
     }
     .swiper-curd-defolt {
+        width: 1200px;
         height: 550px;
     }
     .card-defolt {

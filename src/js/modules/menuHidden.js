@@ -25,14 +25,14 @@ export function scrollMenu() {
         onScrollHeader() // вызываем основную функцию onScrollHeader
     });
 
-    var show;
-    window.openMenuCatalog = function (node) {
-        var subMenu = node.parentNode.getElementsByTagName("ul")[0];
-        subMenu.classList.toggle('menu-li-catalogMenu__hidden');
-        if (show) show.classList.add('menu-li-catalogMenu__hidden')
-        else subMenu.classList.remove('menu-li-catalogMenu__hidden');
-        show = subMenu;
-    }
+    // var show;
+    // window.openMenuCatalog = function (node) {
+    //     var subMenu = node.parentNode.getElementsByTagName("ul")[0];
+    //     subMenu.classList.toggle('catalogMenu__hidden');
+    //     if (show) show.classList.add('catalogMenu__hidden')
+    //     else subMenu.classList.remove('catalogMenu__hidden');
+    //     show = subMenu;
+    // }
 
     var showFooter;
     window.openMenuFooter = function (node) {
@@ -43,8 +43,12 @@ export function scrollMenu() {
         showFooter = subMenu;
     }
 
-    document.querySelector(".catalog-button-wrapper").addEventListener("click", function () {
-        document.querySelector(".catalogMenu").classList.toggle('catalogMenu__hidden');
-    })
+    let catalogButtonWrapper = document.querySelectorAll(".catalog-button-wrapper");
+    for (let i = 0; i < catalogButtonWrapper.length; i++) {
+        catalogButtonWrapper[i].addEventListener("click", function () {
+            document.querySelector(".catalogMenu").classList.toggle('catalogMenu__hidden');
+            document.querySelector(".wrapper").classList.toggle('wrapper-shadow');
+        })
+    }
 }
 

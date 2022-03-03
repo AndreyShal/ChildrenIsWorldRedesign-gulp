@@ -206,5 +206,25 @@ export function swiperFunctions() {
             },
         }
     })
+    const toysGames = new Swiper('.swiper-toys-games', {
+        modules: [Navigation, Pagination],
+        // Default parameters
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // Responsive breakpoints1
+        breakpoints: {
+            // when window width is >= 360px
+            310.95: {
+                slidesPerView: 2.5,
+                spaceBetween: 10,
+            },
+            // when window width is >= 768px
+            480.95: {
+                slidesPerView: 3.7,
+                spaceBetween: 20,
+            },
+        }
+    })
 }
 
