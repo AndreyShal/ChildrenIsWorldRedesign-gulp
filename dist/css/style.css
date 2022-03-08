@@ -5346,6 +5346,7 @@ button.swiper-pagination-bullet {
     display: flex;
     justify-content: space-between;
     transform: rotate(180deg);
+    margin-bottom: 26px;
   }
 
   .educational-toys-criterias-price-schedule-line {
@@ -5388,29 +5389,46 @@ button.swiper-pagination-bullet {
 
   .container {
     position: relative;
-    pointer-events: none;
+    width: 246.79px;
+    height: 16px;
   }
 
-  .container input[type=range] {
-    height: 2em;
-    display: block;
-    margin: 0;
+  #html5 {
+    border: 0;
+    background: #dfecf8;
+    height: 2px;
   }
 
-  .container input[type=range]:last-child {
-    margin-top: -2em;
+  #html5 .noUi-connect {
+    background: #0073e6;
   }
 
-  input[type=range]::-webkit-slider-thumb {
-    pointer-events: all;
+  #html5 .noUi-handle {
+    border: 0;
+    width: 15.61px;
+    height: 16px;
+    top: -7px;
+    right: -9px;
+    /* half the width */
+    border-radius: 50%;
+    background: #0073e6;
+    box-shadow: inherit;
   }
 
-  input[type=range]::-moz-range-thumb {
-    pointer-events: all;
+  #html5 .noUi-handle {
+    box-shadow: 0;
   }
 
-  input[type=range]::-ms-thumb {
-    pointer-events: all;
+  #html5 .noUi-handle::after {
+    content: none;
+  }
+
+  #html5 .noUi-handle::before {
+    content: none;
+  }
+
+  #html5 .noUi-handle:active {
+    box-shadow: inherit;
   }
 }
 @media screen and (min-width: 1440.95px) {

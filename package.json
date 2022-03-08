@@ -15,6 +15,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"gulp-cli": "^2.3.0",
+		"nouislider": "^15.5.1",
 		"swiper": "^8.0.3"
 	},
 	"devDependencies": {
