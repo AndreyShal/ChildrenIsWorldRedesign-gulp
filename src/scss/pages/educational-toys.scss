@@ -650,23 +650,18 @@
     #menuVertical-criterias ul li ul li ul li:hover #catalogMenu-title-menu3 {
         color: #0073e6;
     }
-    #menuVertical-criterias ul li:hover #catalogMenu-title-menu-arrow,
-    #menuVertical-criterias ul li ul li:hover #catalogMenu-title-menu-arrow2,
-    #menuVertical-criterias ul li ul li ul li:hover #catalogMenu-title-menu-arrow3 {
+    #menuVertical-criterias ul li:hover #catalogMenu-title-menu-arrow-criterias,
+    #menuVertical-criterias ul li ul li:hover #catalogMenu-title-menu-arrow-criterias2,
+    #menuVertical-criterias ul li ul li ul li:hover #catalogMenu-title-menu-arrow-criterias3 {
         background-image: url("../img/menu/arrow.svg");
         transform: rotate(360deg);
     }
     #menuVertical-criterias ul li ul li ul li #catalogMenu-title-menu-arrow3 {
         display: none;
     }
-    .catalogMenu-title-menu__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .catalogMenu-title-menu-arrow {
-        width: 13px;
-        height: 10px;
+    .catalogMenu-title-menu-arrow-criterias {
+        width: 20px;
+        height: 15px;
         background-repeat: no-repeat;
         background-position: center center;
         background-image: url("../img/menu/arrow-faded.svg");
@@ -675,10 +670,6 @@
         margin-left: 10px;
         margin-right: 32.67px;
         cursor: pointer;
-    }
-    .catalogMenu-title-menu-arrow-criterias {
-        width: 20px;
-        height: 15px;
     }
     .educational-toys-criterias-show-all {
         width: 246.79px;

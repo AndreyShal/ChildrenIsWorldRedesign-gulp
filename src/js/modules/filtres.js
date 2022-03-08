@@ -48,9 +48,4 @@ export function filtres() {
         });
     })
 
-    function arrowCriteriesFunction() {
-        [...document.getElementsByClassName('catalogMenu-title-menu-arrow')].forEach(i => i.classList.add("catalogMenu-title-menu-arrow-criterias"));
-    }
-    arrowCriteriesFunction()
-
 }
