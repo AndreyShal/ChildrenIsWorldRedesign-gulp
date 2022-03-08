@@ -7,7 +7,7 @@ export function filtres() {
             start: [65, 9000],
             // tooltips: true,
             connect: true,
-            padding: 1,
+            padding: 0,
             range: {
                 'min': 65,
                 'max': 14490,
@@ -48,5 +48,9 @@ export function filtres() {
         });
     })
 
+    function arrowCriteriesFunction() {
+        [...document.getElementsByClassName('catalogMenu-title-menu-arrow')].forEach(i => i.classList.add("catalogMenu-title-menu-arrow-criterias"));
+    }
+    arrowCriteriesFunction()
 
 }
