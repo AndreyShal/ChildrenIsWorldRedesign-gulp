@@ -1,0 +1,11 @@
+html
+	include html/head.pug
+		title Развивающие игрушки
+	body
+		.wrapper
+			include html/catalogMenu.pug
+			include html/header.pug	
+			include html/pages/educational-toys.pug
+			
+		include html/footer.pug
+		script(src='js/app.min.js')

@@ -99,6 +99,21 @@
 .card-defolt-img-4 {
     background-image: url("../img/card-defolt/card-defolt-4.jpg");
 }
+.card-defolt-img-5 {
+    background-image: url("../img/card-defolt/card-defolt-5.jpg");
+}
+.card-defolt-img-6 {
+    background-image: url("../img/card-defolt/card-defolt-6.jpg");
+}
+.card-defolt-img-7 {
+    background-image: url("../img/card-defolt/card-defolt-7.jpg");
+}
+.card-defolt-img-8 {
+    background-image: url("../img/card-defolt/card-defolt-8.jpg");
+}
+.card-defolt-img-9 {
+    background-image: url("../img/card-defolt/card-defolt-9.jpg");
+}
 .card-defolt-name {
     width: 193px;
     margin: 0 auto;
@@ -135,10 +150,16 @@
 }
 .card-defolt-reviews {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
-    width: 32px;
+    // width: 32px;
     margin-left: 8.26px;
+}
+.card-defolt-reviews__text {
+    margin-right: 3.2px;
+}
+.card-defolt-reviews > .chat {
+    margin-bottom: 3px;
 }
 .card-defolt-price {
     position: absolute;

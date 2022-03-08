@@ -226,5 +226,25 @@ export function swiperFunctions() {
             },
         }
     })
+    const educationalToys = new Swiper('.swiper-educational-toys', {
+        modules: [Navigation, Pagination],
+        // Default parameters
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // Responsive breakpoints1
+        breakpoints: {
+            // when window width is >= 360px
+            310.95: {
+                slidesPerView: 2.3,
+                spaceBetween: 10,
+            },
+            // when window width is >= 768px
+            480.95: {
+                slidesPerView: 3.2,
+                spaceBetween: 20,
+            },
+        }
+    })
 }
 
