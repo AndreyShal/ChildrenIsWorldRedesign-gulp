@@ -1,19 +1,179 @@
 .catalogMenu__wrapper {
     position: relative;
-    width: 320px;
+    width: 300px;
     margin: 0 auto;
+    z-index: 101;
 }
 .catalogMenu {
     position: absolute;
-    margin: 0 auto;
     width: 100%;
     padding-top: 9px;
     padding-left: 28px;
-    top: 168px;
+    left: 0;
+    top: 166px;
     background: #f2f6fa;
     min-height: 300px;
+    padding-bottom: 26px;
     z-index: 20;
 }
 .catalogMenu__hidden {
     display: none;
+}
+#menuVertical {
+    width: 100%;
+    height: auto;
+}
+#menuVertical ul {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#menuVertical ul li {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    // position: relative;
+}
+#menuVertical ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: CirceBold;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #1d1d1d;
+    box-sizing: border-box;
+}
+#menuVertical ul li ul {
+    // position: absolete;
+    // top: 0px;
+    // left: 0;
+    display: none;
+    width: 100%;
+}
+/*******показываем выпадашку при наведении ********/
+#menuVertical ul li:hover > ul {
+    display: block;
+}
+#menuVertical ul li ul li {
+    padding: 0px 10px;
+}
+#menuVertical ul li ul li ul li {
+    padding: 0px 10px;
+}
+#menuVertical ul li:hover #catalogMenu-title-menu,
+#menuVertical ul li ul li:hover #catalogMenu-title-menu2,
+#menuVertical ul li ul li ul li:hover #catalogMenu-title-menu3 {
+    color: #0073e6;
+}
+#menuVertical ul li:hover #catalogMenu-title-menu-arrow,
+#menuVertical ul li ul li:hover #catalogMenu-title-menu-arrow2,
+#menuVertical ul li ul li ul li:hover #catalogMenu-title-menu-arrow3 {
+    background-image: url("../img/menu/arrow.svg");
+    transform: rotate(360deg);
+}
+#menuVertical ul li ul li ul li #catalogMenu-title-menu-arrow3 {
+    display: none;
+}
+.catalogMenu-title-menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalogMenu-title-menu-arrow {
+    width: 13px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/menu/arrow-faded.svg");
+    transform: rotate(90deg);
+    background-size: contain;
+    margin-left: 10px;
+    margin-right: 32.67px;
+    cursor: pointer;
+}
+@media screen and (min-width: 480.95px) {
+    .catalogMenu__background {
+        width: 100%;
+    }
+    .catalogMenu__wrapper {
+        width: 460px;
+    }
+}
+@media screen and (min-width: 768.95px) {
+    .catalogMenu__wrapper {
+        width: 307px;
+    }
+    .catalogMenu {
+        top: 126px;
+        left: 168px;
+    }
+}
+@media screen and (min-width: 1000.95px) {
+    .catalogMenu__wrapper {
+        width: 960px;
+    }
+    .catalogMenu {
+        top: 196px;
+        left: 0;
+    }
+    #menuVertical ul {
+        width: 300px;
+    }
+    #menuVertical ul li ul {
+        position: absolute;
+        top: 0px;
+        left: 100%;
+    }
+    #menuVertical ul li ul li ul {
+        position: absolute;
+        top: 0px;
+        left: 100%;
+    }
+    #menuVertical ul li ul {
+        width: 320px;
+    }
+    .catalogMenu-title-menu-arrow {
+        transform: rotate(360deg);
+    }
+    #menuVertical ul li:hover #catalogMenu-title-menu-arrow,
+    #menuVertical ul li ul li:hover #catalogMenu-title-menu-arrow2,
+    #menuVertical ul li ul li ul li:hover #catalogMenu-title-menu-arrow3 {
+        transform: rotate(270deg);
+    }
+}
+@media screen and (min-width: 1440.95px) {
+    .catalogMenu__wrapper {
+        width: 1200px;
+    }
+    #menuVertical ul li ul li ul li ul {
+        position: absolute;
+        top: 0px;
+        left: 100%;
+    }
+    .catalogMenu-ul-li-img {
+        width: 100%;
+        height: 415px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("../img/menu/catalogMenu-ul-li-img.jpg");
+        background-size: contain;
+        cursor: pointer;
+    }
+    #menuVertical ul li ul li ul {
+        width: 285px;
+    }
+    #menuVertical ul {
+        width: 28 0px;
+    }
+    #menuVertical ul li ul {
+        width: 300px;
+    }
+    #menuVertical ul li ul li ul li #catalogMenu-title-menu-arrow3 {
+        display: block;
+    }
 }

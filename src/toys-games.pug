@@ -1,0 +1,14 @@
+html
+	include html/head.pug
+		title Игрушки и игры
+	body
+		.wrapper
+			include html/catalogMenu.pug
+			include html/header.pug	
+			include html/pages/toys-games-block.pug
+			include html/main/smollBanner.pug
+			include html/main/mediumBanner.pug
+			include html/main/reviews.pug
+			
+		include html/footer.pug
+		script(src='js/app.min.js')

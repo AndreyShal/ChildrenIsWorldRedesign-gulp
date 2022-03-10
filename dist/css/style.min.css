@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -350,6 +351,8 @@ h6 {
 .main {
   padding-top: 56px;
   margin-bottom: 17px;
+  z-index: 30;
+  background: #f2f6fa;
 }
 
 .main-320 {
@@ -842,19 +845,21 @@ h6 {
 }
 .catalogMenu__wrapper {
   position: relative;
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
+  z-index: 101;
 }
 
 .catalogMenu {
   position: absolute;
-  margin: 0 auto;
   width: 100%;
   padding-top: 9px;
   padding-left: 28px;
-  top: 168px;
+  left: 0;
+  top: 166px;
   background: #f2f6fa;
   min-height: 300px;
+  padding-bottom: 26px;
   z-index: 20;
 }
 
@@ -862,6 +867,188 @@ h6 {
   display: none;
 }
 
+#menuVertical {
+  width: 100%;
+  height: auto;
+}
+
+#menuVertical ul {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#menuVertical ul li {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#menuVertical ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: CirceBold;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #1d1d1d;
+  box-sizing: border-box;
+}
+
+#menuVertical ul li ul {
+  display: none;
+  width: 100%;
+}
+
+/*******показываем выпадашку при наведении ********/
+#menuVertical ul li:hover > ul {
+  display: block;
+}
+
+#menuVertical ul li ul li {
+  padding: 0px 10px;
+}
+
+#menuVertical ul li ul li ul li {
+  padding: 0px 10px;
+}
+
+#menuVertical ul li:hover #catalogMenu-title-menu,
+#menuVertical ul li ul li:hover #catalogMenu-title-menu2,
+#menuVertical ul li ul li ul li:hover #catalogMenu-title-menu3 {
+  color: #0073e6;
+}
+
+#menuVertical ul li:hover #catalogMenu-title-menu-arrow,
+#menuVertical ul li ul li:hover #catalogMenu-title-menu-arrow2,
+#menuVertical ul li ul li ul li:hover #catalogMenu-title-menu-arrow3 {
+  background-image: url("../img/menu/arrow.svg");
+  transform: rotate(360deg);
+}
+
+#menuVertical ul li ul li ul li #catalogMenu-title-menu-arrow3 {
+  display: none;
+}
+
+.catalogMenu-title-menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalogMenu-title-menu-arrow {
+  width: 13px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/menu/arrow-faded.svg");
+  transform: rotate(90deg);
+  background-size: contain;
+  margin-left: 10px;
+  margin-right: 32.67px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480.95px) {
+  .catalogMenu__background {
+    width: 100%;
+  }
+
+  .catalogMenu__wrapper {
+    width: 460px;
+  }
+}
+@media screen and (min-width: 768.95px) {
+  .catalogMenu__wrapper {
+    width: 307px;
+  }
+
+  .catalogMenu {
+    top: 126px;
+    left: 168px;
+  }
+}
+@media screen and (min-width: 1000.95px) {
+  .catalogMenu__wrapper {
+    width: 960px;
+  }
+
+  .catalogMenu {
+    top: 196px;
+    left: 0;
+  }
+
+  #menuVertical ul {
+    width: 300px;
+  }
+
+  #menuVertical ul li ul {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+  }
+
+  #menuVertical ul li ul li ul {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+  }
+
+  #menuVertical ul li ul {
+    width: 320px;
+  }
+
+  .catalogMenu-title-menu-arrow {
+    transform: rotate(360deg);
+  }
+
+  #menuVertical ul li:hover #catalogMenu-title-menu-arrow,
+#menuVertical ul li ul li:hover #catalogMenu-title-menu-arrow2,
+#menuVertical ul li ul li ul li:hover #catalogMenu-title-menu-arrow3 {
+    transform: rotate(270deg);
+  }
+}
+@media screen and (min-width: 1440.95px) {
+  .catalogMenu__wrapper {
+    width: 1200px;
+  }
+
+  #menuVertical ul li ul li ul li ul {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+  }
+
+  .catalogMenu-ul-li-img {
+    width: 100%;
+    height: 415px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/menu/catalogMenu-ul-li-img.jpg");
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  #menuVertical ul li ul li ul {
+    width: 285px;
+  }
+
+  #menuVertical ul {
+    width: 28 0px;
+  }
+
+  #menuVertical ul li ul {
+    width: 300px;
+  }
+
+  #menuVertical ul li ul li ul li #catalogMenu-title-menu-arrow3 {
+    display: block;
+  }
+}
 .swiper-main-bunner__wrapper {
   position: relative;
   height: 237px;
@@ -1988,6 +2175,26 @@ h6 {
   background-image: url("../img/card-defolt/card-defolt-4.jpg");
 }
 
+.card-defolt-img-5 {
+  background-image: url("../img/card-defolt/card-defolt-5.jpg");
+}
+
+.card-defolt-img-6 {
+  background-image: url("../img/card-defolt/card-defolt-6.jpg");
+}
+
+.card-defolt-img-7 {
+  background-image: url("../img/card-defolt/card-defolt-7.jpg");
+}
+
+.card-defolt-img-8 {
+  background-image: url("../img/card-defolt/card-defolt-8.jpg");
+}
+
+.card-defolt-img-9 {
+  background-image: url("../img/card-defolt/card-defolt-9.jpg");
+}
+
 .card-defolt-name {
   width: 193px;
   margin: 0 auto;
@@ -2032,10 +2239,16 @@ h6 {
 
 .card-defolt-reviews {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 32px;
   margin-left: 8.26px;
+}
+
+.card-defolt-reviews__text {
+  margin-right: 3.2px;
+}
+
+.card-defolt-reviews > .chat {
+  margin-bottom: 3px;
 }
 
 .card-defolt-price {
@@ -2076,7 +2289,7 @@ h6 {
   }
 
   .swiper-curd-defolt {
-    width: 100%;
+    width: 460px;
     height: 400px;
     margin-bottom: 44px;
   }
@@ -2113,10 +2326,11 @@ h6 {
 @media screen and (min-width: 768.95px) {
   .card-defolt-container {
     width: 640px;
+    margin: 0 auto;
   }
 
   .swiper-curd-defolt {
-    width: 100%;
+    width: 640px;
     height: 550px;
     margin-bottom: 50px;
   }
@@ -2202,6 +2416,10 @@ h6 {
   }
 }
 @media screen and (min-width: 1000.95px) {
+  .swiper-curd-defolt {
+    width: 960px;
+  }
+
   .card-defolt-container {
     width: 960px;
   }
@@ -2212,6 +2430,7 @@ h6 {
   }
 
   .swiper-curd-defolt {
+    width: 1200px;
     height: 550px;
   }
 
@@ -2628,6 +2847,8 @@ h6 {
   }
 }
 .special-offers__container {
+  margin: 0 auto;
+  width: 300px;
   margin-bottom: 40px;
 }
 
@@ -2713,6 +2934,10 @@ h6 {
 }
 
 @media screen and (min-width: 480.95px) {
+  .special-offers__container {
+    width: 459px;
+  }
+
   .special-offers {
     width: 459px;
   }
@@ -2730,6 +2955,7 @@ h6 {
 }
 @media screen and (min-width: 768.95px) {
   .special-offers__container {
+    width: 640px;
     margin-bottom: 50px;
   }
 
@@ -2739,6 +2965,7 @@ h6 {
 }
 @media screen and (min-width: 1000.95px) {
   .special-offers__container {
+    width: 960px;
     display: flex;
     justify-content: space-between;
   }
@@ -2767,6 +2994,10 @@ h6 {
   }
 }
 @media screen and (min-width: 1440.95px) {
+  .special-offers__container {
+    width: 1200px;
+  }
+
   .special-offers {
     width: 380px;
     height: 390px;
@@ -4285,11 +4516,1541 @@ button.swiper-pagination-bullet {
     height: 56px;
   }
 }
+.toys-games-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.toys-games-nav__container {
+  width: 201px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.toys-games-nav {
+  font-family: CirceRegular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6c859f;
+}
+
+.toys-games-nav-arrow {
+  width: 15px;
+  height: 25px;
+  background-image: url("../img/header/shooter.svg");
+  transform: rotate(270deg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.toys-games-title {
+  margin-bottom: 18px;
+}
+
+.swiper-toys-games {
+  width: 320px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.toys-games-menu__container768 {
+  display: none;
+}
+
+.toys-games-menu__block {
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid #6c859f;
+  font-family: CirceRegular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #6c859f;
+}
+
+.toys-games__container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.toys-games__block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-bottom: 16px;
+}
+
+.toys-games__block-img {
+  width: 60.94px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.toys-games__block-img1 {
+  background-image: url("../img/toysGames/1.jpg");
+}
+
+.toys-games__block-img2 {
+  background-image: url("../img/toysGames/2.jpg");
+}
+
+.toys-games__block-img3 {
+  background-image: url("../img/toysGames/3.jpg");
+}
+
+.toys-games__block-img4 {
+  background-image: url("../img/toysGames/4.jpg");
+}
+
+.toys-games__block-img5 {
+  background-image: url("../img/toysGames/5.jpg");
+}
+
+.toys-games__block-img6 {
+  background-image: url("../img/toysGames/6.jpg");
+}
+
+.toys-games__block-img7 {
+  background-image: url("../img/toysGames/7.jpg");
+}
+
+.toys-games__block-img8 {
+  background-image: url("../img/toysGames/8.jpg");
+}
+
+.toys-games__block-img9 {
+  background-image: url("../img/toysGames/9.jpg");
+}
+
+.toys-games__block-img10 {
+  background-image: url("../img/toysGames/10.jpg");
+}
+
+.toys-games__block-img11 {
+  background-image: url("../img/toysGames/11.jpg");
+}
+
+.toys-games__block-img12 {
+  background-image: url("../img/toysGames/12.jpg");
+}
+
+.toys-games__block-title {
+  font-family: CirceBold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+
+@media screen and (min-width: 480.95px) {
+  .toys-games-wrapper {
+    width: 480px;
+  }
+
+  .swiper-toys-games {
+    width: 480px;
+  }
+
+  .toys-games__container {
+    width: 460px;
+  }
+
+  .toys-games__block-img {
+    width: 93.44px;
+    height: 93px;
+  }
+
+  .toys-games__block-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+@media screen and (min-width: 768.95px) {
+  .toys-games-wrapper {
+    width: 640px;
+  }
+
+  .swiper-toys-games {
+    display: none;
+  }
+
+  .toys-games-menu__container768 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+
+  .toys-games-menu__block {
+    margin-right: 20px;
+    margin-bottom: 18px;
+  }
+
+  .toys-games__container {
+    width: 640px;
+  }
+
+  .toys-games__block-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .toys-games__block-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+@media screen and (min-width: 1000.95px) {
+  .toys-games-wrapper {
+    width: 960px;
+  }
+
+  .toys-games__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 960px;
+  }
+
+  .toys-games__block {
+    width: 307px;
+    display: block;
+    margin-bottom: 71px;
+  }
+
+  .toys-games__block-img {
+    width: 100%;
+    height: 285px;
+    margin-bottom: 16px;
+  }
+
+  .toys-games__block-title {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1440.95px) {
+  .toys-games-wrapper {
+    width: 1200px;
+  }
+
+  .toys-games__container {
+    width: 1200px;
+  }
+
+  .toys-games__block {
+    width: 278px;
+    margin-bottom: 81px;
+  }
+}
+.toys-games-nav__container {
+  justify-content: start;
+  width: auto;
+}
+
+.toys-games-nav__container1000 {
+  display: none;
+}
+
+.educational-toys-nav-arrow {
+  transform: rotate(90deg);
+  margin-right: 8px;
+}
+
+.toys-games-nav {
+  cursor: pointer;
+}
+
+.educational-toys-show-all {
+  background: #dfecf8;
+  color: #0073e6;
+}
+
+.swiper-educational-toys {
+  height: 55px;
+}
+
+.educational-toys-menu__container768 {
+  display: none;
+}
+
+.educational-toys-functions768 {
+  display: none;
+}
+
+.swiper-slide-educational-toys-hidden {
+  display: none;
+}
+
+.educational-toys-functions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.educational-toys-functions {
+  margin-bottom: 16px;
+}
+
+.educational-toys-way-to-get {
+  width: auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dfecf8;
+  border-radius: 10px;
+  padding-left: 9.5px;
+  padding-right: 9.5px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.educational-toys-way-to-get-text {
+  font-family: CirceBold;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #0073e6;
+  margin-right: 12.67px;
+}
+
+.educational-toys-way-to-get-arrow {
+  width: 20px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-image: url("../img/menu/arrow.svg");
+}
+
+.educational-toys-filter {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dfecf8;
+  border-radius: 36px;
+  margin-left: 280px;
+}
+
+.educational-toys-filter-img {
+  width: 19px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-image: url("../img/card-defolt/filters.svg");
+}
+
+.educational-toys__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.educational-toys__container > .card-defolt {
+  width: 140px;
+  height: 275px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-left: 7px;
+}
+
+.educational-toys__container > .card-defolt > .card-defolt-img {
+  width: 124px;
+  height: 128px;
+}
+
+.educational-toys__container > .card-defolt > .card-defolt-name {
+  width: 120px;
+  top: 149px;
+  left: 7px;
+}
+
+.stars-none {
+  display: none;
+}
+
+.educational-toys__container > .card-defolt > .card-defolt-production-evaluation > .stars-container {
+  width: auto;
+}
+
+.card-defolt-name768 {
+  display: none;
+}
+
+.educational-toys__container > .card-defolt > .card-defolt-price {
+  width: 110px;
+  top: 228px;
+  left: 7px;
+}
+
+.educational-toys__container > .card-defolt > .card-defolt-circle-top.card-defolt-circle-top1 {
+  top: 10px;
+  left: 10px;
+  transform: scale(0.8);
+}
+
+.educational-toys__container > .card-defolt > .card-defolt-circle-top.card-defolt-circle-top2 {
+  top: 10px;
+  left: 10px;
+  transform: scale(0.8);
+}
+
+.educational-toys__container > .card-defolt > .card-defolt-heart {
+  top: 12px;
+  right: 11.33px;
+  transform: scale(0.8);
+}
+
+.educational-toys__container > .card-defolt > .card-defolt-circle-top-duble.card-defolt-circle-top2 {
+  transform: scale(0.8);
+  top: 28.75;
+  left: 10px;
+}
+
+.educational-toys__container > .card-defolt > .card-defolt-name {
+  width: 120px;
+  top: 149px;
+  left: 7px;
+}
+
+@media screen and (min-width: 480.95px) {
+  .educational-toys-way-to-get {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .educational-toys-filter {
+    margin-left: 0;
+  }
+
+  .educational-toys__container > .card-defolt {
+    width: 220px;
+    height: 354px;
+    padding-top: 31px;
+    padding-left: 14px;
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-img {
+    width: 158px;
+    height: 158px;
+    margin-left: 17px;
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-name {
+    width: 193px;
+    top: 199px;
+    left: 14px;
+  }
+
+  .stars-none {
+    display: block;
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-price {
+    width: 134.6px;
+    top: 307px;
+    left: 14px;
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-circle-top.card-defolt-circle-top1 {
+    top: 16px;
+    left: 16px;
+    transform: scale(1);
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-circle-top.card-defolt-circle-top2 {
+    top: 16px;
+    left: 16px;
+    transform: scale(1);
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-heart {
+    top: 19px;
+    right: 18px;
+    transform: scale(1);
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-circle-top-duble.card-defolt-circle-top2 {
+    transform: scale(1);
+    top: 41px;
+    left: 16px;
+  }
+}
+@media screen and (min-width: 768.95px) {
+  .swiper-educational-toys {
+    display: none;
+  }
+
+  .educational-toys-menu__container768 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .educational-toys-functions {
+    display: none;
+  }
+
+  .educational-toys-functions768 {
+    display: block;
+  }
+
+  .educational-toys-way-to-get__container {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .educational-toys-way-to-get-place {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    height: 21px;
+    padding: 0 16px;
+    background: #0073e6;
+    border-radius: 10px;
+    margin: 0 16px;
+  }
+
+  .etwtg__container {
+    font-family: CirceBold;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .educational-toys-way-to-get-text2 {
+    color: #0073e6;
+  }
+
+  .educational-toys-functions768__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .educational-toys-sort768-1 {
+    font-family: CirceBold;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1d1d1d;
+  }
+
+  .educational-toys-sort768-2 {
+    font-family: CirceRoundedRegular5;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c859f;
+  }
+
+  .educational-toys-sort768__block {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+  }
+
+  .educational-toys-price768__block {
+    display: flex;
+    align-items: center;
+  }
+
+  .educational-toys-sort768-arow {
+    height: 14px;
+    width: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("../img/card-defolt/arrow-price.jpg");
+    margin-left: 3px;
+  }
+
+  .educational-toys-filters768__block {
+    display: flex;
+    align-items: center;
+  }
+
+  .educational-toys-filters768__block > .educational-toys-filter-img {
+    transform: scale(1.4);
+  }
+
+  .educational-toys-filters768-text {
+    font-family: CirceBold;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0073e6;
+    margin-right: 11.33px;
+  }
+
+  .card-defolt-name320 {
+    display: none;
+  }
+
+  .card-defolt-name768 {
+    display: block;
+  }
+
+  .educational-toys__container > .card-defolt {
+    width: 307px;
+    height: 459px;
+    padding-top: 26px;
+    padding-left: 17.24px;
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-img {
+    width: 227.28px;
+    height: 233px;
+    margin-left: 23.12px;
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-name {
+    width: 267.47px;
+    top: 269px;
+    left: 17.24px;
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-price {
+    width: 134.6px;
+    top: 408px;
+    left: 17.67px;
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-circle-top.card-defolt-circle-top1 {
+    z-index: 2;
+  }
+
+  .educational-toys__container > .card-defolt > .card-defolt-circle-top-duble.card-defolt-circle-top2 {
+    top: 51px;
+  }
+}
+@media screen and (min-width: 1000.95px) {
+  .toys-games-nav__container1000 {
+    display: flex;
+    align-items: center;
+  }
+
+  .toys-games-nav {
+    margin-right: 10px;
+  }
+
+  .toys-games-nav-arrow.educational-toys-nav-arrow {
+    transform: rotate(270deg);
+  }
+
+  .educational-toys__container-wrapper768 {
+    display: none;
+  }
+
+  .educational-toys__container-wrapper1000 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .educational-toys__block-wrapper1000-1 {
+    width: 307px;
+    min-height: 1000px;
+  }
+
+  .educational-toys-way-to-get__wrapper {
+    width: 100%;
+    min-height: 391px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-top: 16px;
+  }
+
+  .educational-toys-criterias__wrapper {
+    width: 100%;
+    min-height: 781px;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+
+  .educational-toys-way-to-get__name {
+    width: 246.79px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #1d1d1d;
+    font-family: CirceBold;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .educational-toys-way-to-get__wrapper-block {
+    width: 246.79px;
+    height: 84px;
+    padding-top: 16px;
+    padding-left: 16px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid #a1b9d3;
+  }
+
+  .educational-toys-way-to-get__wrapper-block-1 {
+    background: #dfecf8;
+    border: 0px solid #a1b9d3;
+  }
+
+  .educational-toys-way-to-get-1-1 {
+    color: #0073e6;
+    font-family: CirceRegular;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+  }
+
+  .educational-toys-way-to-get-1-2 {
+    color: #1d1d1d;
+    font-family: CirceBold;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+  }
+
+  .educational-toys-way-to-get-2 {
+    font-family: CirceBold;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0073e6;
+    cursor: pointer;
+  }
+
+  .educational-toys-way-to-get-change {
+    width: 246.79px;
+    height: 40px;
+    margin: 0 auto;
+    color: #0073e6;
+    font-family: CirceRegular;
+    font-size: 14px;
+    line-height: 21px;
+    background: #dfecf8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .educational-toys__block-wrapper1000-2 {
+    width: 632px;
+  }
+
+  .educational-toys__block-wrapper1000-2 > .educational-toys-way-to-get__container > .educational-toys-way-to-get-text1.etwtg__container {
+    color: #6c859f;
+  }
+
+  .educational-toys__block-wrapper1000-2 > .educational-toys-sort768__block {
+    margin-bottom: 18px;
+  }
+
+  .educational-toys-clear-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dfecf8;
+    border-radius: 10px;
+    font-family: CirceBold;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #0073e6;
+    padding: 3px 15px;
+  }
+
+  .educational-toys-criterias-price__container {
+    padding-top: 23px;
+    padding-left: 30.61px;
+    padding-bottom: 9px;
+  }
+
+  .educational-toys-criterias-price-title {
+    color: #1d1d1d;
+    font-family: CirceBold;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+
+  .educational-toys-criterias-price__block {
+    position: relative;
+    width: 246.79px;
+    height: 40px;
+    border: 1px solid #a1b9d3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 18px;
+  }
+
+  .educational-toys-criterias-price-item {
+    font-family: CirceBold;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1d1d1d;
+    cursor: pointer;
+  }
+
+  .educational-toys-criterias-price-item input {
+    width: 70px;
+  }
+
+  #educational-toys-criterias-price-start-input::-webkit-input-placeholder {
+    font-family: CirceRegular;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c859f;
+  }
+
+  #educational-toys-criterias-price-end-input::-webkit-input-placeholder {
+    font-family: CirceRegular;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c859f;
+  }
+
+  .educational-toys-criterias-price-item input {
+    font-family: CirceRegular;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c859f;
+  }
+
+  .educational-toys-criterias-price__block-line {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #a1b9d3;
+    top: 0;
+    left: 122.4px;
+  }
+
+  .educational-toys-criterias-price-schedule {
+    width: 246.79px;
+    height: 70px;
+    border: 1px solid #a1b9d3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(180deg);
+    margin-bottom: 26px;
+  }
+
+  .educational-toys-criterias-price-schedule-line {
+    height: 100%;
+    width: 1px;
+    background-color: #a1b9d3;
+  }
+
+  .educational-toys-criterias-price-schedule-background {
+    width: 40px;
+    height: 50px;
+    background: #dfecf8;
+  }
+
+  .e-t-c-p-s-b1 {
+    height: 9px;
+    border-radius: 10px 0 0 0;
+  }
+
+  .e-t-c-p-s-b2 {
+    height: 25px;
+  }
+
+  .e-t-c-p-s-b3 {
+    height: 42px;
+  }
+
+  .e-t-c-p-s-b4 {
+    height: 48px;
+  }
+
+  .e-t-c-p-s-b5 {
+    height: 25px;
+  }
+
+  .e-t-c-p-s-b6 {
+    height: 15px;
+    border-radius: 0 10px 0 0;
+  }
+
+  .educational-toys-criterias-price-slider {
+    position: relative;
+    width: 246.79px;
+    height: 16px;
+    margin-bottom: 17px;
+  }
+
+  #html5 {
+    border: 0;
+    background: #dfecf8;
+    height: 2px;
+  }
+
+  #html5 .noUi-connect {
+    background: #0073e6;
+  }
+
+  #html5 .noUi-handle {
+    border: 0;
+    width: 15.61px;
+    height: 16px;
+    top: -7px;
+    right: -9px;
+    /* half the width */
+    border-radius: 50%;
+    background: #0073e6;
+    box-shadow: inherit;
+  }
+
+  #html5 .noUi-handle {
+    box-shadow: 0;
+    cursor: pointer;
+  }
+
+  #html5 .noUi-handle::after {
+    content: none;
+  }
+
+  #html5 .noUi-handle::before {
+    content: none;
+  }
+
+  #html5 .noUi-handle:active {
+    box-shadow: inherit;
+  }
+
+  .educational-toys-criterias-price-borders {
+    width: 246.79px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  .educational-toys-criterias-price-border {
+    font-family: CirceRegular;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c859f;
+    border: 1px solid #6c859f;
+    padding: 2px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #menuVertical-criterias {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  #menuVertical-criterias ul {
+    display: block;
+    width: 253px;
+    height: auto;
+    position: relative;
+    padding-top: 10px;
+    border-top: 1px solid #dfecf8;
+  }
+
+  #menuVertical-criterias ul li {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dfecf8;
+  }
+
+  #menuVertical-criterias ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: CirceBold;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #1d1d1d;
+    box-sizing: border-box;
+  }
+
+  #menuVertical-criterias ul li ul {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /*******показываем выпадашку при наведении ********/
+  #menuVertical-criterias ul li:hover > ul {
+    display: block;
+  }
+
+  #menuVertical-criterias ul li ul li {
+    padding: 0px 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dfecf8;
+  }
+
+  #menuVertical-criterias ul li ul li ul li {
+    padding: 0px 10px;
+  }
+
+  #menuVertical-criterias ul li:hover #catalogMenu-title-menu,
+#menuVertical-criterias ul li ul li:hover #catalogMenu-title-menu2,
+#menuVertical-criterias ul li ul li ul li:hover #catalogMenu-title-menu3 {
+    color: #0073e6;
+  }
+
+  #menuVertical-criterias ul li:hover #catalogMenu-title-menu-arrow-criterias,
+#menuVertical-criterias ul li ul li:hover #catalogMenu-title-menu-arrow-criterias2,
+#menuVertical-criterias ul li ul li ul li:hover #catalogMenu-title-menu-arrow-criterias3 {
+    background-image: url("../img/menu/arrow.svg");
+    transform: rotate(360deg);
+  }
+
+  #menuVertical-criterias ul li ul li ul li #catalogMenu-title-menu-arrow3 {
+    display: none;
+  }
+
+  .catalogMenu-title-menu-arrow-criterias {
+    width: 20px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/menu/arrow-faded.svg");
+    transform: rotate(90deg);
+    background-size: contain;
+    margin-left: 10px;
+    margin-right: 32.67px;
+    cursor: pointer;
+  }
+
+  .educational-toys-criterias-show-all {
+    width: 246.79px;
+    height: 40px;
+    background: #0073e6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    font-family: CirceRegular;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .educational-toys-criterias-clear-all {
+    width: 246.79px;
+    height: 40px;
+    background: #dfecf8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: CirceRegular;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #0073e6;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1440.95px) {
+  .swiper-slide-educational-toys-hidden {
+    display: block;
+  }
+
+  .swiper-slide-educational-toys18-hidden {
+    display: none;
+  }
+
+  .educational-toys__block-wrapper1000-1 {
+    width: 278px;
+  }
+
+  .educational-toys-criterias-price__container {
+    padding-left: 15.61px;
+  }
+
+  .educational-toys__block-wrapper1000-2 {
+    width: 894px;
+  }
+
+  .educational-toys__container > .card-defolt {
+    width: 278px;
+    height: 459px;
+  }
+}
+.piple-reviews320 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.piple-reviews480 {
+  display: none;
+}
+
+.piple-reviews768__wrapper {
+  display: none;
+}
+
+.piple-reviews-stars__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.piple-reviews-num {
+  font-family: CirceBold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1d1d1d;
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.piple-reviews-stars__container {
+  display: flex;
+}
+
+.piple-reviews-stars {
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.piple-reviews-stars1 {
+  background-image: url("../img/card-defolt/stars.svg");
+}
+
+.piple-reviews-stars2 {
+  background-image: url("../img/card-defolt/stars-half.svg");
+}
+
+.piple-reviews-chat__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.piple-reviews-chat {
+  font-family: CirceRoundedRegular3;
+  font-size: 14px;
+  line-height: 21px;
+  color: #0073e6;
+  font-weight: 400;
+  margin-right: 6px;
+}
+
+.piple-reviews-chat-img {
+  width: 20px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-image: url("../img/card-defolt/chat.jpg");
+  margin-right: 10.67px;
+}
+
+.piple-reviews-like {
+  width: 15px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-image: url("../img/card-defolt/heart-blue.svg");
+}
+
+.product-brand__container {
+  width: 246px;
+  height: 40px;
+  background: #dfecf8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-brand-title {
+  font-family: CirceRoundedRegular3;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1d1d1d;
+  font-weight: 400;
+}
+
+.product-brand-name {
+  font-family: CirceRoundedRegular3;
+  font-size: 24px;
+  line-height: 35px;
+  color: #f24e1e;
+}
+
+.product__wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.product-swiper__container {
+  position: relative;
+  width: 100%;
+  height: 384px;
+  padding-top: 40px;
+  margin-bottom: 16px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.swiper-product1 {
+  width: 202px;
+  height: 248px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-img {
+  width: 202px;
+  height: 248px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.product-img1 {
+  background-image: url("../img/product/alatoys/1.jpg");
+}
+
+.product-img2 {
+  background-image: url("../img/product/alatoys/2.jpg");
+}
+
+.product-img3 {
+  background-image: url("../img/product/alatoys/3.jpg");
+}
+
+.product-img4 {
+  background-image: url("../img/product/alatoys/4.jpg");
+}
+
+.product-img5 {
+  background-image: url("../img/product/alatoys/5.jpg");
+}
+
+.swiper-product2 {
+  width: 282px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.swiper-product2 .swiper-slide-active {
+  border: 1px solid #0073e6;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.product-img-smoll {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.product-arrow__container {
+  top: 156px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 23.77px;
+}
+
+.product-arrow-prev {
+  width: 16px;
+  height: 32px;
+  background-image: url("../img/swiper/arrow-prev.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.product-arrow-next {
+  width: 16px;
+  height: 32px;
+  background-image: url("../img/swiper/arrow-prev.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.product-swipe {
+  position: absolute;
+  top: 14.5px;
+  right: 14.08px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-image: url("../img/card-defolt/swipe.svg");
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480.95px) {
+  .piple-reviews320 {
+    display: none;
+  }
+
+  .piple-reviews480 {
+    display: block;
+  }
+
+  .piple-reviews480__container {
+    display: flex;
+  }
+
+  .product-brand__container {
+    margin-right: 16px;
+  }
+
+  .piple-reviews-chat-img,
+.piple-reviews-like {
+    transform: scale(1.4);
+  }
+
+  .piple-reviews-chat-img {
+    margin-right: 20px;
+  }
+
+  .product__wrapper {
+    width: 460px;
+  }
+
+  .product-swiper__container {
+    height: 649px;
+    margin-bottom: 30px;
+  }
+
+  .swiper-product1 {
+    width: 311.21px;
+    height: 439.06px;
+    margin-bottom: 7.86px;
+  }
+
+  .product-img {
+    width: 311.21px;
+    height: 439.08px;
+  }
+
+  .swiper-product2 {
+    width: 430px;
+    height: 114px;
+  }
+
+  .product-img-smoll {
+    width: 113.23px;
+    height: 112px;
+  }
+
+  .product-arrow__container {
+    top: 283.33px;
+    padding: 0 39.87px;
+  }
+
+  .product-arrow-prev {
+    width: 20px;
+    height: 40px;
+  }
+
+  .product-arrow-next {
+    width: 20px;
+    height: 40px;
+  }
+
+  .product-swipe {
+    width: 32px;
+    height: 32px;
+    top: 28px;
+    right: 27px;
+  }
+}
+@media screen and (min-width: 768.95px) {
+  .piple-reviews320__wrapper > .toys-games-title {
+    display: none;
+  }
+
+  .piple-reviews480 {
+    display: none;
+  }
+
+  .piple-reviews768__wrapper {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .piple-reviews-stars__wrapper {
+    margin-left: 20px;
+  }
+
+  .piple-reviews768__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .piple-reviews768__wrapper > .toys-games-title {
+    margin-right: 20px;
+  }
+
+  .piple-reviews-num {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .piple-reviews-stars {
+    width: 22px;
+    height: 22px;
+  }
+
+  .piple-reviews-favorites {
+    display: flex;
+    justify-content: space-between;
+    width: 117px;
+  }
+
+  .piple-reviews-chat {
+    margin-right: 18px;
+  }
+
+  .product-brand__container {
+    margin-bottom: 0;
+  }
+
+  .toys-games-title h2 {
+    font-family: CirceRoundedRegular3;
+  }
+
+  .product__wrapper {
+    width: 640px;
+  }
+
+  .product-swiper__container {
+    height: 649px;
+  }
+
+  .swiper-product1 {
+    width: 432.99px;
+    height: 439.06px;
+  }
+
+  .product-img {
+    width: 432.99px;
+    height: 439.08px;
+  }
+
+  .swiper-product2 {
+    width: 611.6px;
+    height: 114px;
+    margin: 0 auto;
+  }
+
+  .product-img-smoll {
+    width: 113.23px;
+    height: 112px;
+  }
+
+  .product-arrow__container {
+    top: 283.33px;
+    padding: 0 39.87px;
+  }
+
+  .product-arrow-prev {
+    width: 20px;
+    height: 40px;
+  }
+
+  .product-arrow-next {
+    width: 20px;
+    height: 40px;
+  }
+
+  .product-swipe {
+    width: 32px;
+    height: 32px;
+    top: 28px;
+    right: 27px;
+  }
+}
 .wrapper {
   width: 100%;
   margin: 0 auto;
   position: relative;
   padding: 0 10px;
+}
+
+.wrapper-shadow {
+  position: relative;
+}
+
+.wrapper-shadow::before {
+  content: "";
+  position: absolute;
+  top: 166px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 29, 29, 0.3);
+  z-index: 100;
 }
 
 @media screen and (min-width: 480.95px) {
@@ -4302,13 +6063,22 @@ button.swiper-pagination-bullet {
 @media screen and (min-width: 768.95px) {
   .wrapper {
     width: 640px;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .wrapper-shadow::before {
+    top: 130px;
   }
 }
 @media screen and (min-width: 1000.95px) {
   .wrapper {
     width: 960px;
     margin: 0 auto;
+  }
+
+  .wrapper-shadow::before {
+    top: 196px;
   }
 }
 @media screen and (min-width: 1440.95px) {

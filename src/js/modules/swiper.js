@@ -206,5 +206,93 @@ export function swiperFunctions() {
             },
         }
     })
+    const toysGames = new Swiper('.swiper-toys-games', {
+        modules: [Navigation, Pagination],
+        // Default parameters
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // Responsive breakpoints1
+        breakpoints: {
+            // when window width is >= 360px
+            310.95: {
+                slidesPerView: 2.5,
+                spaceBetween: 10,
+            },
+            // when window width is >= 768px
+            480.95: {
+                slidesPerView: 3.7,
+                spaceBetween: 20,
+            },
+        }
+    })
+    const educationalToys = new Swiper('.swiper-educational-toys', {
+        modules: [Navigation, Pagination],
+        // Default parameters
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // Responsive breakpoints1
+        breakpoints: {
+            // when window width is >= 360px
+            310.95: {
+                slidesPerView: 2.3,
+                spaceBetween: 10,
+            },
+            // when window width is >= 768px
+            480.95: {
+                slidesPerView: 3.2,
+                spaceBetween: 20,
+            },
+        }
+    })
+    const productSwiper1 = new Swiper('.swiper-product1', {
+        modules: [Navigation, Pagination],
+        // Default parameters
+        navigation: {
+            nextEl: '.product-arrow-next',
+            prevEl: '.product-arrow-prev',
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // Responsive breakpoints1
+        breakpoints: {
+            // when window width is >= 360px
+            310.95: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            // when window width is >= 768px
+            480.95: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+        }
+    })
+    const productSwiper2 = new Swiper('.swiper-product2', {
+        modules: [Navigation, Pagination],
+        // Default parameters
+        navigation: {
+            nextEl: '.product-arrow-next',
+            prevEl: '.product-arrow-prev',
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // Responsive breakpoints1
+        breakpoints: {
+            // when window width is >= 360px
+            310.95: {
+                slidesPerView: 3.5,
+                spaceBetween: 10,
+            },
+            // when window width is >= 768px
+            480.95: {
+                slidesPerView: 3.5,
+                spaceBetween: 10,
+            },
+        }
+    })
 }
 

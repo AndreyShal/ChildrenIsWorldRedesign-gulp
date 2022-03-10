@@ -1,0 +1,11 @@
+html
+	include html/head.pug
+		title Alatoys
+	body
+		.wrapper
+			include html/catalogMenu.pug
+			include html/header.pug	
+			include html/pages/product.pug
+			
+		include html/footer.pug
+		script(src='js/app.min.js')
